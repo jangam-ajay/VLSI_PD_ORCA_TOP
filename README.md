@@ -5,8 +5,11 @@
 💡 Passionate about backend VLSI, RTL to GDSII, and physical design automation
 
 🚀 Hands-on with Synopsys ICC2, Design Compiler, PrimeTime, Cadence Innovus for 28nm PnR flows
-
-# PD_ORCA_TOP_28nm
+<br><br>
+<br><br>
+<br><br>
+# 🔗PROJECTS
+  # PD_ORCA_TOP_28nm
 
 
 **Block-level multi-voltage ASIC physical design** at **28nm** with **52K std cells** & **40 macros**. Full RTL-to-signoff flow for **multi-power domains** & **5 clocks**, with **TCL automation** showcasing senior PD skills.
