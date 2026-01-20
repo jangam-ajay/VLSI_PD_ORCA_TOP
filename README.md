@@ -26,7 +26,7 @@
 ## 🛠️ Tools Stack
 | Tool | Purpose |
 |------|---------|
-| **ICC2** | PnR/CTS/Routing | 
+| **ICC2** | PnR | 
 | **DC** | Synthesis | 
 | **STARRC** | Spef | 
 | **PrimeTime** | STA/DMSA |
