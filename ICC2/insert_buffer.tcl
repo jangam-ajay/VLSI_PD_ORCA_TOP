@@ -13,7 +13,7 @@ move_objects -to $ploc $cn
 
 ####### proc ends ##############
 
-set file_name ./outputs/R/mcv_apo.txt
+set file_name ./outputs/R/mtv_apo.txt
 set fh_read [open $file_name r]
 set m 0
 set n 0
