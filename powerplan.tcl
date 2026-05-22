@@ -22,11 +22,11 @@ set hm(top) [remove_from_collection $all_macros $hm(risc_core)]
 
 #create_keepout margin -outer {3 3 3 3} $all_macros
 #STRIPES - M7,M8
-create_pg_mesh_pattern P_top_two -layers { { {horizontal_layer: M7} {width: 1.104} {spacing: interleaving} {pitch: 13,376} {offset: 0.856} {trim : true}
+create_pg_mesh_pattern P_top_two -layers { { {horizontal_layer: M7} {width: 1.104} {spacing: interleaving} {pitch: 13.376} {offset: 0.856} {trim : true}
 g: interleaving} {pitch: 19.456} {offset: 6.08} {trim : true} } } -via_rule { {intersection: adjacent} {via_master : pgvia_8x10} }
 
 # Lower mesh : Ver layer is M2, align to the track , Width is for 3 differnt straps
-create_pg_mesh_pattern P_m2_triple -layers { { {vertical_layer: M2} {track_alignment : track} {width: 0.44 0.192 0. 192} {spacing: 2.724 3.456} {pitch:
+create_pg_mesh_pattern P_m2_triple -layers { { {vertical_layer: M2} {track_alignment : track} {width: 0.44 0.192 0. 192} {spacing: 2.724 3.456} {pitch:3.12} } } -via_rule { {intersection: adjacent} {via_master : pgvia_8x10} }
 ## == > PG Strategy for M7 and M8 straps
 # Default Voltage area
 set_pg_strategy S_default_vddvss -core -pattern { {name: P_top_two} {nets: {VSS VDD}} {offset_start: {0 0}} } -blockage { {{nets: VDD} {voltage_areas:
