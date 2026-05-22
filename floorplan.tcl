@@ -23,10 +23,10 @@ save_block -as L_CORD
 
 help *ports*
 
-get_ports -> collection of all the ports
+get_ports #collection of all the ports
 
 sizeof_collection [get_ports]
-¥237
+#237
 
 sizeof_collection [all_outputs]
 #142
@@ -36,7 +36,7 @@ all_inputs
 #clock ports & input ports
 sizeof_collection [remove_from_collection [all_inputs] [get_ports "clk"] ]
 
-clock
+#clock ports
 sizeof_collection [get_ports *clk* ]
 
 #PORT_PLACEMENT
