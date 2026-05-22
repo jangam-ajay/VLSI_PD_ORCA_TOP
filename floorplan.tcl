@@ -1,5 +1,5 @@
 #INITIALIZING THE FLOORPLAN
-WSIDE RATIO METHOD
+#SIDE RATIO METHOD
 
 #R SHAPE
 initialize_floorplan -shape R -side_ratio {2 1} -core_offset 5 -use_site_row -site_def unit -core_utilization 0.75
@@ -7,17 +7,12 @@ initialize_floorplan -shape R -side_ratio {2 1} -core_offset 5 -use_site_row -si
 #L SHAPE
 initialize_floorplan -shape L -side_ratio {2 1 1 2} -core_offset 5 -use_site_row -site_def unit -core_utilization 0.75
 
-#ASSIGNMENT :
-#CREATE A T SHAPE CORE AREA WITH SIDE RATIO METHOD.
-
 #USING COORINATES
-
 #R-SHAPE
 initialize_floorplan -boundary {{5 5} {700 5} {700 700} {5 700}} -use_site_row -site_def unit -core_offset 5
 #L-SHAPE
 initialize_floorplan -boundary {{5 5} {1000 5} {1000 500} {500 500} {500 1000} {5 1000}} -core_offset 5
 
-#ASSIGNMENT
 initialize_floorplan -boundary {{100 200} {250 200} {250 100} {750 100} {750 500} {1000 500} {1000 600} {750 600} {750 1000} {250 1000} {250 800} {100 800} {100 700} {250 700} {250 400} {1000 5}
 #L-SHAPE with ORIENTATION
 initialize_floorplan -boundary {{5 5} {5 500} {500 500} {500 880} {880 880} {880 5}} -core_offset 5 -use_site_row -site_def unit
