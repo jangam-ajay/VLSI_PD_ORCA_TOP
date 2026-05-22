@@ -13,7 +13,6 @@ initialize_floorplan -boundary {{5 5} {700 5} {700 700} {5 700}} -use_site_row -
 #L-SHAPE
 initialize_floorplan -boundary {{5 5} {1000 5} {1000 500} {500 500} {500 1000} {5 1000}} -core_offset 5
 
-initialize_floorplan -boundary {{100 200} {250 200} {250 100} {750 100} {750 500} {1000 500} {1000 600} {750 600} {750 1000} {250 1000} {250 800} {100 800} {100 700} {250 700} {250 400} {1000 5}
 #L-SHAPE with ORIENTATION
 initialize_floorplan -boundary {{5 5} {5 500} {500 500} {500 880} {880 880} {880 5}} -core_offset 5 -use_site_row -site_def unit
 save_block -as L_CORD
