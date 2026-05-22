@@ -37,7 +37,7 @@ set_pg_strategy S_va_vddh -voltage_areas PD_RISC_CORE -pattern
 # Default Voltage area
 set_pg_strategy S_m2_vddvss -core -pattern { {name: P_m2_triple} {nets: {VDD VSS VSS}} {offset_start: {0 0}} } -blockage { {{nets: VDD} {voltage_areas
 s} } -extension {{stop:keep_floating_wire_piecies} }
-# PD Risc core voltage are
+# PD Risc core voltage are VDDH AND VSS
 set_pg_strategy S_m2_vddh -voltage_areas PD_RISC_CORE -pattern { {name: P_m2_triple} {nets: {VDDH - -}} {offset_start: {0 0}} } -blockage { {macros_wi
 ction:B} {stop:design_boundary_and_generate_pin} }}
 # Via rules has been mentioned to connect M2 to M7
