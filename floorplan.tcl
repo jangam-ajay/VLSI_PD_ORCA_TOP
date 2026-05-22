@@ -2,7 +2,7 @@
 WSIDE RATIO METHOD
 
 #R SHAPE
-initialize_floorplan -shape R -side_ratio {2 1} -core_offset 5 -use_site_row -site_def unit -core_utilization D.75
+initialize_floorplan -shape R -side_ratio {2 1} -core_offset 5 -use_site_row -site_def unit -core_utilization 0.75
 
 #L SHAPE
 initialize_floorplan -shape L -side_ratio {2 1 1 2} -core_offset 5 -use_site_row -site_def unit -core_utilization 0.75
