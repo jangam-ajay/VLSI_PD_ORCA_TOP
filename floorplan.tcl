@@ -97,6 +97,8 @@ set_fixed_objects [get_flat_cells -filter "is_hard_macro"] -unfix
 #MACRO PLACEMENT USING TOOL
 
 #APP_OPTIONS
+#Placing macros using command prompt
+
 #PLACE ONLY THE MACRO'S NOT THE STANDARD CELLS
 set_app_options -name plan.macro.macro_place_only -value true
 
