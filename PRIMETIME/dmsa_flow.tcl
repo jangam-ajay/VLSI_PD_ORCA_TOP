@@ -15,8 +15,8 @@ check_eco
 
 report_constraints -max_transition -all_violators -significant_digits 5
 fix_eco_drc -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT} -physical_mode occupied_site -type max_transition
-fix_eco_drc -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT} -type max_transition -unfixable_reasons_format text -unfixable_reasons_prefi>
-remote_execute {
+fix_eco_drc -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT} -type max_transition -unfixable_reasons_format text 
+remote_execute 
 set_eco_options -physical_enable_clock_data
 
 fix_eco_drc -type max_transition -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT } -cell_type clock_network
@@ -27,7 +27,7 @@ MAX CAP ##
 report_constraints -max_capacitance -all_violators -significant_digits 5
 fix_eco_drc -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT} -physical_mode occupied_site -type max_capacitance
 
-fix_eco_drc -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT} -type max_capacitance -unfixable_reasons_format text -unfixable_reasons_pref
+fix_eco_drc -buffer_list {NBUFFX2_RVT NBUFFX4_RVT NBUFFX8_RVT NBUFFX16_RVT} -type max_capacitance -unfixable_reasons_format text f
 fix_eco_drc -type max_capacitance -buffer_list {NBUFFX2_RVT NBUFFX4_RVT_NBUFFX8_RVT NBUFFX16_RVT } -cell_type clock_network
 report_constraints -max_capacitance -all_violators -significant_digits
 # XTALK
